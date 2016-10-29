@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10174" systemVersion="15B42" minimumToolsVersion="Automatic">
+    <entity name="Feed" representedClassName="FeedApp.Feed" syncable="YES">
+        <attribute name="checksum" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="feedId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nextPage" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pageId" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="shotCards" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="ShotCard" syncable="YES"/>
+    </entity>
+    <entity name="ShotCard" representedClassName="FeedApp.ShotCard" syncable="YES">
+        <attribute name="heartCount" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="playMp4" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="shotCardId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="videoId" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="shotThumbnail" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="ShotThumbnail" syncable="YES"/>
+    </entity>
+    <entity name="ShotThumbnail" representedClassName="FeedApp.ShotThumbnail" syncable="YES">
+        <attribute name="large" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="medium" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="small" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="shotCard" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="ShotCard" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Feed" positionX="-63" positionY="-18" width="128" height="120"/>
+        <element name="ShotCard" positionX="-54" positionY="18" width="128" height="120"/>
+        <element name="ShotThumbnail" positionX="-36" positionY="45" width="128" height="105"/>
+    </elements>
+</model>

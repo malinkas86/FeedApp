@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>config</key>
+	<dict>
+		<key>acceptApplication</key>
+		<string>application/json</string>
+		<key>acceptLanguage</key>
+		<string>en</string>
+		<key>feedBaseURL</key>
+		<string>https://api.kamcord.com/v1/</string>
+		<key>clientName</key>
+		<string>ios</string>
+		<key>ipadRowCount</key>
+		<string>5</string>
+		<key>iphoneRowCount</key>
+		<string>3</string>
+		<key>defaultPageCount</key>
+		<string>20</string>
+	</dict>
+</dict>
+</plist>
