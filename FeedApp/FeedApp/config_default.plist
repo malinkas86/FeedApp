@@ -9,7 +9,7 @@
 		<key>acceptLanguage</key>
 		<string>en</string>
 		<key>feedBaseURL</key>
-		<string>https://api.kamcord.com/v1/</string>
+		<string>&lt;URL&gt;</string>
 		<key>clientName</key>
 		<string>ios</string>
 		<key>ipadRowCount</key>
